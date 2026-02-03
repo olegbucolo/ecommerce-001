@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index()
+    public function show()
     {
         return User::all();
     }
@@ -19,7 +19,7 @@ class UserController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-        
+
         $user = User::where('email', $request->email)->first();
 
         if (! $user || $user->password !== $request->password) {

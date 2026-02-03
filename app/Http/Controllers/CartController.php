@@ -6,7 +6,7 @@ use App\Models\Cart;
 
 class CartController extends Controller
 {
-    public function index()
+    public function show()
     {
         return Cart::all();
     }

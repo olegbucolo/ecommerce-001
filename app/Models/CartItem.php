@@ -22,3 +22,28 @@ class CartItem extends Model
         return $this->belongsTo(Product::class);
     }
 }
+
+/*
+namespace App\Model;
+
+use Illumiante\Database\Eloquent\Model;
+
+class CartItem extends Model
+{
+    protected $fillable = [
+        'cart_id',
+        'product_id',
+        'quantity'
+    ];
+
+    public function cart()
+    {
+        return $this->belongsTo(Cart::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
+}
+*/

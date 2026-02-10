@@ -13,7 +13,7 @@ Route::get('/users', [UserController::class, 'show']);
 Route::get('/products', [ProductController::class, 'show']);
 
 // CART ROUTES
-Route::get('/cart', [CartController::class, 'show']);
+Route::get('/carts', [CartController::class, 'show']);
 
 // CART_ITEMS ROUTES
 Route::get('/cart/items', [CartItemsController::class, 'show']);

@@ -13,7 +13,6 @@ class CartItemsController extends Controller
         return CartItem::all();
     }
 
-    // add item to cart
     public function store(Request $request)
     {
         $request->validate([
@@ -43,7 +42,6 @@ class CartItemsController extends Controller
         ], 201);
     }
 
-    // remove item from cart
     public function destroy(Request $request)
     {
         $request->validate([

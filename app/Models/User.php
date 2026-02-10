@@ -45,6 +45,30 @@ class User extends Authenticatable
 
     public function carts()
     {
-        return $this->hasMany(Cart::class);
+        return $this->hasOne(Cart::class);
     }
 }
+
+/*
+
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Models;
+
+class User extends Model
+{
+    protected $fillable = [
+        'name',
+        'email',
+        'password'
+    ];
+
+    public function cart()
+    {
+        return $this->hasOne(Cart::class);
+    }
+}
+
+*/

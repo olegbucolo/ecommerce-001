@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\Http;
 
 class ProductSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $response = Http::withoutVerifying()->get('https://fakestoreapi.com/products');

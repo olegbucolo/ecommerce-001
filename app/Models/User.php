@@ -49,26 +49,14 @@ class User extends Authenticatable
     }
 }
 
-/*
 
-<?php
 
-namespace App\Models;
 
-use Illuminate\Database\Eloquent\Models;
 
-class User extends Model
-{
-    protected $fillable = [
-        'name',
-        'email',
-        'password'
-    ];
 
-    public function cart()
-    {
-        return $this->hasOne(Cart::class);
-    }
-}
 
-*/
+
+
+
+
+

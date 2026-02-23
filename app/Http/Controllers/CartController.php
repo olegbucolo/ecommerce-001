@@ -12,33 +12,3 @@ class CartController extends Controller
     }
 }
 
-/*
-    <?php
-
-    namespace App\Http\Controllers;
-
-    use App\Models\Cart;
-
-    class CartController extends Controller
-    {
-        public function show()
-        {
-            return Cart::all();
-        }
-    }
-
-
-    <?php
-
-    namespace App\Http\Controllers;
-
-    use App\Models\Cart;
-
-    class CartController extends Controller
-    {
-        public function show()
-        {
-            return Cart::all();
-        }
-    }
-*/

@@ -16,7 +16,8 @@ class ProductSeeder extends Seeder
             return;
         }
 
-        foreach ($response->json() as $item) {
+        foreach ($response->json() as $item) 
+        {
             Product::create([
                 'title' => $item['title'],
                 'price' => $item['price'],
